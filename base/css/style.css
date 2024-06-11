@@ -1,0 +1,124 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+header {
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
+}
+
+.carousel-item img {
+    border-radius: 0px 0px 2rem 2rem;
+}
+
+.orquideas {
+    width: 100vw;
+    max-width: 100%;
+    position: fixed;
+    z-index: 1;
+    margin-top: 1rem;
+}
+
+.nav-itens-pai a {
+    font-size: 1rem;
+    text-decoration: none;
+    margin: 1rem;
+}
+
+.ativo {
+    background-color: #AB136A;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    color: white;
+}
+
+.nav-itens {
+    color: #AB136A;
+}
+
+.logo {
+    width: 10%;
+}
+
+.navbar {
+    background-color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.rodapeitens {
+
+    max-height: -webkit-fill-available;
+    height: 100%;
+    position: absolute; 
+    margin-top: 1.5rem;
+    width: 100vw;
+    margin-right: 10rem;
+    margin-left: 10rem;
+    text-align: center;
+    max-width: 100%;
+
+}
+
+.textorodape {
+    color: white;
+}
+
+.logorodape {
+    width: 30%;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .logo {
+        width: 15%;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .nav-itens-pai a {
+        font-size: 0.8rem;
+        margin: 0.2rem;
+    }
+    .ativo {
+        border-radius: 0.3rem;
+        padding: 0.3rem;
+    }    
+    .logo {
+        width: 20%;
+    }
+    .textorodape {
+
+        font-size: 0.5rem;
+
+    }
+    .rodapeitens {
+        margin-top: 0.7rem;
+    }
+    
+}
+
+@media only screen and (max-width: 400px) {
+
+    .nav-itens-pai a {
+        font-size: 0.6rem;
+        margin: 0.2rem;
+    }    
+    .ativo {
+        border-radius: 0.2rem;
+        padding: 0.2rem;
+    }
+    .logo {
+        width: 20%;
+    }
+
+}
