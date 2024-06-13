@@ -57,7 +57,7 @@
 
 }
 
-.produtos p{
+.produtos p {
 
     background-color: #AB136A;
     border-radius: 2rem;
@@ -138,11 +138,33 @@ main {
 
 }
 
+.secaoIMG {
+    display: none;
+}
+
 
 @media only screen and (max-width: 900px) {
 
     .logo {
         width: 15%;
+    }
+
+    .produtos {
+
+        margin-top: -1.5rem;
+        z-index: 1;
+        position: relative;
+        font-size: 1rem;
+
+    }
+
+    .produtos p {
+
+        background-color: #AB136A;
+        border-radius: 2rem;
+        padding: 0.5rem 7rem;
+        color: white;
+
     }
 
 }
@@ -173,22 +195,73 @@ main {
         margin-top: 0.7rem;
     }
 
-    .textoPC {
-        display: none;
+    .produtos {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        font-size: small;
+    }
+
+    .produtos {
+
+        margin-top: -1.5rem;
+        z-index: 1;
+        position: relative;
+        font-size: 1rem;
+
+    }
+
+    .produtos p {
+
+        background-color: #AB136A;
+        border-radius: 2rem;
+        padding: 0.5rem 5rem;
+        color: white;
+
     }
 
     .textoMOBILE {
         text-indent: 18px;
-        justify-content: center;
         display: flex;
         padding: 0.25rem;
         color: #AB136A;
-        font-size: 25px;
+        font-size: 15px;
         ;
+    }
+
+    .textoPC {
+        display: none;
+    }
+
+    .titulo {
+        color: #AB136A;
+        text-align: center;
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
     }
 
     strong {
         display: contents;
+    }
+
+    .linha {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .secaoIMG img {
+        width: 125px;
+        height: auto;
+        margin: 5px;
+        margin-bottom: 0;
+        border-radius: 15%;
+    }
+
+    .secaoIMG {
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
 }
@@ -221,11 +294,73 @@ main {
         display: flex;
         padding: 0.25rem;
         color: #AB136A;
-        font-size: 25px;
+        font-size: 10px;
         ;
     }
 
     .textoPC {
+        display: none;
+    }
+
+    .produtos {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        font-size: small;
+    }
+
+    .produtos {
+
+        margin-top: -1.5rem;
+        z-index: 1;
+        position: relative;
+        font-size: 1rem;
+
+    }
+
+    .produtos p {
+
+        background-color: #AB136A;
+        border-radius: 2rem;
+        padding: 0.5rem 5rem;
+        color: white;
+
+    }
+
+    .imagens {
+        display: flex;
+    }
+
+    .secaoIMG img {
+        border-radius: 50%;
+        margin: 10px;
+
+    }
+
+    .secaoIMG {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+
+    .produtos {
+        font-size: 0.7rem;
+    }
+
+    .produtos p {
+
+        background-color: #AB136A;
+        border-radius: 2rem;
+        padding: 0.5rem 3rem;
+        color: white;
+
+    }
+
+}
+
+@media only screen and (max-width: 340px) {
+    .orquideas {
         display: none;
     }
 }
