@@ -37,31 +37,33 @@
 }
 
 .orquideas {
-    width: 90vw;
+    width: 100vw;
     max-width: 100vw;
     position: fixed;
     z-index: 1;
     margin-top: 1rem;
 }
 
-.retangulo {
-    background-color: #AB136A;
-    height: 53,95px;
-    width: 90%;
+.produtos {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    border-radius: 2rem;
-    text-align: center;
-    font-size: 1.5rem;
-    padding: 10px 10px;
-    color: white;
+    margin-top: -1.5rem;
+    z-index: 1;
+    position: relative;
+    font-size: 2rem;
+
 }
 
-.retangulo-carrossel{
-    align-items: center;
-    padding: 0px 0px 0px 55px;
-    padding: center;
-    position: relative;
-    margin-top: -1.5rem;
+.produtos p{
+
+    background-color: #AB136A;
+    border-radius: 2rem;
+    padding: 0.5rem 12rem;
+    color: white;
+
 }
 
 .rodapeitens {
@@ -78,10 +80,10 @@
 
 }
 
-footer{
-
-   display: flex;
-   justify-content: center;
+footer {
+    height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -115,16 +117,22 @@ main {
 
 }
 
-.texto {
-    text-align: center;
+.textoPC {
+    text-indent: 50px;
+    text-align: justify;
     justify-content: center;
     display: flex;
     padding: 0.25rem;
     color: #AB136A;
     font-size: 25px;
+    ;
 }
 
-.conteiner{
+.textoMOBILE {
+    display: none;
+}
+
+.conteiner {
     padding: 0% 15% 0% 15%;
     margin: 2em 0 0 0;
 
@@ -165,12 +173,30 @@ main {
         margin-top: 0.7rem;
     }
 
+    .textoPC {
+        display: none;
+    }
+
+    .textoMOBILE {
+        text-indent: 18px;
+        justify-content: center;
+        display: flex;
+        padding: 0.25rem;
+        color: #AB136A;
+        font-size: 25px;
+        ;
+    }
+
+    strong {
+        display: contents;
+    }
+
 }
 
 @media only screen and (max-width: 400px) {
 
     .nav-itens-pai a {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
         margin: 0.2rem;
     }
 
@@ -187,5 +213,19 @@ main {
 
     .logo {
         width: 20%;
+    }
+
+    .textoMOBILE {
+        text-indent: 18px;
+        justify-content: center;
+        display: flex;
+        padding: 0.25rem;
+        color: #AB136A;
+        font-size: 25px;
+        ;
+    }
+
+    .textoPC {
+        display: none;
     }
 }
