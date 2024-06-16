@@ -63,6 +63,7 @@
     height:100%;
     display: flex;  
     gap: 1.5rem;
+    position: relative;
 }
 
 .img {
@@ -91,7 +92,7 @@
 
 .saibamais {
     background-color: white;
-    height: 80px;
+    height: 90px;
     width: 280px;
     border-radius: 2rem;
     justify-content: center;
@@ -180,7 +181,7 @@
 .text {
     text-align: center;
     width: 50vw;
-    font-size: 20px;
+    font-size: 1rem;
     }
 
 }
@@ -202,9 +203,13 @@ border-radius: 5vw;
 
 @media only screen and (max-width: 800px) {
 .img {
-        height: 240px;
-        width: 320px;   
+        height: 220px;
+        width: 300px;   
         }
+.text {
+    font-size: 1rem;
+}
+
 
 }
 
@@ -217,7 +222,7 @@ border-radius: 5vw;
 .text {
 text-align: center;
 width: 60vw;
-font-size: 3vw;
+font-size: 1rem;
 }
 
 
@@ -249,7 +254,7 @@ height: 210px;
 .text {
     text-align: center;
     width: 70vw;
-    font-size: 3.5vw;
+    font-size: 1rem;
 }
 
 .nav-itens-pai {

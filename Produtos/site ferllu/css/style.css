@@ -37,7 +37,7 @@ header {
     z-index: 1;
     position: relative;
     font-size: 2rem;
-
+    margin-top: 2rem;
 }
 
 .produtos p{
@@ -126,6 +126,18 @@ header {
     text-decoration: none;
 }
 
+.filtroativo {
+    font-size: 25px;
+    background-color: #AB136A;
+    color: white;
+    border: 2px solid #AB136A;
+    border-radius: 2rem;
+    text-align: center;
+    margin: 5px 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
 .nav-itens {
     color: #AB136A;
 }
@@ -173,6 +185,10 @@ footer {
         font-size: 0.8rem;
     }
 
+    .filtroativo {
+        font-size: 0.8rem;
+    }
+
     .logo {
         width: 15%;
     }
@@ -201,6 +217,10 @@ footer {
 @media only screen and (max-width: 600px) {
 
     .filtro {
+        font-size: 0.6rem;
+    }
+
+    .filtroativo {
         font-size: 0.6rem;
     }
 
@@ -258,6 +278,10 @@ footer {
     }
 
     .filtro {
+        font-size: 0.5rem;
+    }
+
+    .filtroativo {
         font-size: 0.5rem;
     }
 
