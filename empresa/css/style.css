@@ -107,13 +107,6 @@ footer {
     width: 30%;
 }
 
-.titulo {
-    color: #AB136A;
-    text-align: center;
-    margin-bottom: 2rem;
-    font-size: 5vw;
-}
-
 body {
     margin: 0;
     background-color: #FFEDE9;
@@ -129,6 +122,13 @@ main {
 
 }
 
+.titulo {
+    color: #AB136A;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 4.5vw;
+}
+
 .textoPC {
     text-indent: 50px;
     text-align: justify;
@@ -136,7 +136,7 @@ main {
     display: flex;
     padding: 0.25rem;
     color: #AB136A;
-    font-size: 2.6vw;
+    font-size: 2.2vw;
 
 }
 
@@ -155,13 +155,15 @@ main {
 }
 
 .imagensPC img {
-    width: 12vw;
+    width: 14vw;
     height: auto;
-    margin: 1vw;
-    margin-bottom: 0;
+    margin-top: 2vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
     border-radius: 2vw;
     margin-bottom: 10px;
-    z-index: 5;
+    position: relative;
+    z-index: 1;
 }
 
 .imagensPC {
@@ -170,7 +172,6 @@ main {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    z-index: 5;
 }
 
 .br400 {
