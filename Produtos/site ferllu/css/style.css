@@ -5,6 +5,15 @@
     font-style: normal;
 }
 
+main,nav,body,input {
+    background-color: #FFEDE9;
+}
+
+header {
+    width: 100vw;
+    z-index: 2;
+}
+
 .nav-itens-pai a {
     font-size: 1rem;
     text-decoration: none;
@@ -18,45 +27,67 @@
     color: white;
 }
 
-.mainbar{
-    background-color: #FFEDE9;
-}
     
-.container2 {
+.produtos {
+
     display: flex;
-    flex-direction:column;
     justify-content: center;
     align-items: center;
-}
-    
-.n1 {
-    background-color: #AB136A;
-    height: 53,95px;
-    width: 700px;
     text-align: center;
-    border-radius: 2rem;
-    text-align: center;
-    font-size: x-large;
-    padding: 10px 10px;
-    color: white;
+    z-index: 1;
+    position: relative;
+    font-size: 2rem;
+    margin-top: 2rem;
 }
 
-.pesquise {
-    border: 2px solid #AB136A;
-    background-color: #FFEDE9;
-    height: 30px;
-    width: 300px;
+.produtos p{
+
+    background-color: #AB136A;
     border-radius: 2rem;
-    text-align: left;
-    font-size: medium;
-    padding: 5px 10px;
-    color: #B2A7A4;
+    padding: 0.5rem 12rem;
+    color: white;
+
+}
+
+.input-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+}
+
+.input-pesquisa{
+    width: 50%;
+    border-color: #AB136A;
+    border-style: solid;
+    appearance: none;
+    height: 2.5rem;
+    padding-left: 2.5rem;
+}
+
+.lupa {
+    position: relative;
+    margin-right: -2rem;
+    width: 1%;
+    fill: #AB136A;
 }
 
 .containerFiltro1 {
-    display: flex;
-    flex-direction:row;
-    justify-content: center;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-left: 8%;
+        padding-right: 8%;
+}
+
+.containerFiltro2 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-left: 8%;
+        padding-right: 8%;
 }
 
 .produto {
@@ -67,6 +98,8 @@
     margin: 20px 20px;
     text-align: center;
     padding-top: 15px;
+    text-decoration: none;
+    box-shadow: 0px 0px 5px 1px rgb(255, 137, 214);
 }
 
 .prod {
@@ -90,6 +123,19 @@
     text-align: center;
     margin: 5px 5px;
     padding: 5px 10px;
+    text-decoration: none;
+}
+
+.filtroativo {
+    font-size: 25px;
+    background-color: #AB136A;
+    color: white;
+    border: 2px solid #AB136A;
+    border-radius: 2rem;
+    text-align: center;
+    margin: 5px 5px;
+    padding: 5px 10px;
+    text-decoration: none;
 }
 
 .nav-itens {
@@ -107,6 +153,8 @@
 footer {
     display: flex;
     justify-content: center;
+    z-index: 1;
+    position: relative;
 }
 
 .rodapeitens {
@@ -133,13 +181,48 @@ footer {
 
 @media only screen and (max-width: 900px) {
 
+    .filtro {
+        font-size: 0.8rem;
+    }
+
+    .filtroativo {
+        font-size: 0.8rem;
+    }
+
     .logo {
         width: 15%;
+    }
+    .lupa {
+        width: 2%;
+    }
+    .produtos {
+
+        z-index: 1;
+        position: relative;
+        font-size: 1rem;
+    
+    }
+    
+    .produtos p{
+    
+        background-color: #AB136A;
+        border-radius: 2rem;
+        padding: 0.5rem 7rem;
+        color: white;
+    
     }
 
 }
 
 @media only screen and (max-width: 600px) {
+
+    .filtro {
+        font-size: 0.6rem;
+    }
+
+    .filtroativo {
+        font-size: 0.6rem;
+    }
 
     .nav-itens-pai a {
         font-size: 0.8rem;
@@ -160,11 +243,47 @@ footer {
     .rodapeitens {
         margin-top: 0.7rem;
     }
+    .input-pesquisa{
+        width: 60%;
+    }
+    .produtos {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        font-size: small;
+    }
+    .lupa {
+        width: 4%;
+    }
+    .produtos {
 
+        z-index: 1;
+        position: relative;
+        font-size: 1rem;
     
+    }
+    .produtos p{
+        border-radius: 2rem;
+        padding: 0.5rem 5rem;
+    }
+
+    .containerFiltro1 {
+        width: 95vw;
+    }
 }
 
 @media only screen and (max-width: 400px) {
+
+    .containerFiltro1 {
+        width: 95vw;
+    }
+
+    .filtro {
+        font-size: 0.5rem;
+    }
+
+    .filtroativo {
+        font-size: 0.5rem;
+    }
 
     .nav-itens-pai a {
         font-size: 0.6rem;
@@ -176,6 +295,29 @@ footer {
     }
     .logo {
         width: 20%;
+    }
+    .input-pesquisa {
+        font-size: 0.7rem;
+        height: 2rem;
+    }
+    .input-group {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+
+    .produtos {
+        font-size: 0.7rem;
+    }
+    .produtos p{
+        padding: 0.5rem 3rem;
+    }
+    .input-pesquisa {
+        height: 1.5rem;
+    }
+    .input-group {
+        margin: 0;
     }
 
 }
