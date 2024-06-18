@@ -1,0 +1,263 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    position: relative;
+    z-index: 0;
+    background-color: #AB136A;
+}
+
+body::before {
+    content: "";
+    background-image: url('fundo.png');
+    background-size: cover; 
+    background-position: center; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.05; 
+    z-index: -1;
+}
+
+header {
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
+    top: 0;
+}
+
+.carousel-item img {
+    border-radius: 0px 0px 2rem 2rem;
+    margin-top: 5rem;
+}
+
+.orquideas {
+    width: 100vw;
+    max-width: 100%;
+    position: fixed;
+    z-index: 1;
+    margin-top: 1rem;
+}
+
+.nav-itens-pai a {
+    font-size: 1rem;
+    text-decoration: none;
+    margin: 1rem;
+}
+
+.ativo {
+    background-color: #AB136A;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    color: white;
+}
+
+.nav-itens {
+    color: #AB136A;
+}
+
+.logo {
+    width: 10%;
+}
+
+.navbar {
+    background-color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.rodapeitens {
+
+    max-height: -webkit-fill-available;
+    height: 100%;
+    position: absolute; 
+    margin-top: 1.5rem;
+    width: 100vw;
+    margin-right: 10rem;
+    margin-left: 10rem;
+    text-align: center;
+    max-width: 100%;
+
+}
+
+.textorodape {
+    color: white;
+}
+
+.logorodape {
+    width: 30%;
+}
+
+.visite-texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: calc(3rem + 7vw);
+}
+
+.visite-texto h1 {
+    display: inline;
+    color: #FFEDE9;
+    font-size: calc(1rem + 2.2vw);
+}
+
+.loja-texto {
+    background-color: #FFEDE9;
+    color: #AB136A !important;
+    border-radius: calc(1rem + 1vw);
+    padding: calc(0.5rem + 0.5vw);
+    margin-left: calc(0.5rem + 0.1vw);
+}
+
+.img-fachada {
+    display: flex;
+    justify-self: center;
+    text-align: center;
+    align-items: center;
+}
+
+.img-fachada img{
+    border-radius: calc(1rem + 1vw);
+    width: calc(10rem + 40vw);
+    margin: calc(1rem + 1vw) 0;
+    box-shadow: 1px 3px 6px 0px #0000004f;
+}
+
+main {
+    display: grid;
+    justify-content: center;
+}
+
+p, h1 {
+    font-weight: 700;
+}
+
+.endereco {
+    font-size: calc(0.4rem + 1.3vw);
+    display: flex;
+    justify-content: center;
+    color: #FFEDE9;
+}
+
+.contato {
+    background-color: #440b2cd4;
+    border-radius: calc(1rem + 1vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin-bottom: 10vw;
+    box-shadow: 1px 3px 6px 0px #0000004f;
+}
+
+.img-contato {
+    border-radius: calc(1rem + 1vw);
+    width: calc(5rem + 20vw);
+    box-shadow: 4px 0px 9px 0px #0000004f;
+}
+
+.bi-whatsapp {
+    width: calc(0.5rem + 1.5vw);
+    height: calc(0.5rem + 1.5vw);
+    margin-right: 1vw;
+}
+
+.saibamais {
+
+    background-color: #FFEDE9;
+    color: #AB136A !important;
+    border-radius: calc(1rem + 1vw);
+    padding: 1vw calc(0.5rem + 1.5vw);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: calc(0.2rem + 1.5vw);
+
+}
+
+.info-contato {
+    padding: 0 calc(0.5rem + 3vw);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.info-contato h1 {
+    color: #FFEDE9;
+    font-size: calc(1rem + 6vw);
+    margin-bottom: 1vw;
+}
+
+.secao-contato {
+    display: flex;
+    justify-content: center;
+    margin: calc(1rem + 1vw) 0;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .logo {
+        width: 15%;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .nav-itens-pai a {
+        font-size: 0.8rem;
+        margin: 0.2rem;
+    }
+    .ativo {
+        border-radius: 0.3rem;
+        padding: 0.3rem;
+    }    
+    .logo {
+        width: 20%;
+    }
+    .textorodape {
+
+        font-size: 0.5rem;
+
+    }
+    .rodapeitens {
+        margin-top: 0.7rem;
+    }
+    .carousel-item img {
+        border-radius: 0px 0px 0.5rem 0.5rem;
+        margin-top: 4rem;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 400px) {
+
+    .carousel-item img {
+        border-radius: 0px 0px 0.5rem 0.5rem;
+        margin-top: 3rem;
+    }
+
+    .nav-itens-pai a {
+        font-size: 0.6rem;
+        margin: 0.2rem;
+    }    
+    .ativo {
+        border-radius: 0.2rem;
+        padding: 0.2rem;
+    }
+    .logo {
+        width: 20%;
+    }
+
+}
