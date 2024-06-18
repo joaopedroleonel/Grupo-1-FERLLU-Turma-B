@@ -1,0 +1,327 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+main,nav,body,input {
+    background-color: #FFEDE9;
+}
+
+header {
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
+    top: 0;
+}
+
+.nav-itens-pai a {
+    font-size: 1rem;
+    text-decoration: none;
+    margin: 1rem;
+}
+
+.ativo {
+    background-color: #AB136A;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    color: white;
+}
+
+    
+.produtos {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    font-size: 2rem;
+    margin-top: 10vw;
+}
+
+.produtos p{
+
+    background-color: #AB136A;
+    border-radius: 2rem;
+    padding: 0.5rem 12rem;
+    color: white;
+
+}
+
+.input-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+}
+
+.input-pesquisa{
+    width: 50%;
+    border-color: #AB136A;
+    border-style: solid;
+    appearance: none;
+    height: 2.5rem;
+    padding-left: 2.5rem;
+}
+
+.lupa {
+    position: relative;
+    margin-right: -2rem;
+    width: 1%;
+    fill: #AB136A;
+}
+
+.containerFiltro1 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-left: 8%;
+        padding-right: 8%;
+}
+
+.containerFiltro2 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-left: 8%;
+        padding-right: 8%;
+}
+
+.produto {
+    background-color: #AB136A;
+    height: 230px;
+    width: 200px;
+    border-radius: 15px;
+    margin: 20px 20px;
+    text-align: center;
+    padding-top: 15px;
+    text-decoration: none;
+    box-shadow: 0px 0px 5px 1px rgb(255, 137, 214);
+}
+
+.prod {
+    color: white;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.imgprod {
+    border-radius: 15px;
+    height: 160px;
+    width: 180px;
+}
+
+.filtro {
+    font-size: 25px;
+    background-color: #FFEDE9;
+    color: #AB136A;
+    border: 2px solid #AB136A;
+    border-radius: 2rem;
+    text-align: center;
+    margin: 5px 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.filtroativo {
+    font-size: 25px;
+    background-color: #AB136A;
+    color: white;
+    border: 2px solid #AB136A;
+    border-radius: 2rem;
+    text-align: center;
+    margin: 5px 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.nav-itens {
+    color: #AB136A;
+}
+
+.logo {
+    width: 10%;
+}
+
+.navbar {
+    background-color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+}
+
+.rodapeitens {
+
+    max-height: -webkit-fill-available;
+    height: 100%;
+    position: absolute; 
+    margin-top: 1.5rem;
+    width: 100vw;
+    margin-right: 10rem;
+    margin-left: 10rem;
+    text-align: center;
+    max-width: 100%;
+
+}
+
+.textorodape {
+    color: white;
+}
+
+.logorodape {
+    width: 30%;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .filtro {
+        font-size: 0.8rem;
+    }
+
+    .filtroativo {
+        font-size: 0.8rem;
+    }
+
+    .logo {
+        width: 15%;
+    }
+    .lupa {
+        width: 2%;
+    }
+    .produtos {
+
+        z-index: 1;
+        position: relative;
+        font-size: 1rem;
+        margin-top: 13vw;
+    
+    }
+    
+    .produtos p{
+    
+        background-color: #AB136A;
+        border-radius: 2rem;
+        padding: 0.5rem 7rem;
+        color: white;
+    
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .filtro {
+        font-size: 0.6rem;
+    }
+
+    .filtroativo {
+        font-size: 0.6rem;
+    }
+
+    .nav-itens-pai a {
+        font-size: 0.8rem;
+        margin: 0.2rem;
+    }
+    .ativo {
+        border-radius: 0.3rem;
+        padding: 0.3rem;
+    }    
+    .logo {
+        width: 20%;
+    }
+    .textorodape {
+
+        font-size: 0.5rem;
+
+    }
+    .rodapeitens {
+        margin-top: 0.7rem;
+    }
+    .input-pesquisa{
+        width: 60%;
+    }
+    .produtos {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        font-size: small;
+    }
+    .lupa {
+        width: 4%;
+    }
+    .produtos {
+
+        z-index: 1;
+        position: relative;
+        font-size: 1rem;
+        margin-top: 15vw;
+    
+    }
+    .produtos p{
+        border-radius: 2rem;
+        padding: 0.5rem 5rem;
+    }
+
+    .containerFiltro1 {
+        width: 95vw;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .containerFiltro1 {
+        width: 95vw;
+    }
+
+    .filtro {
+        font-size: 0.5rem;
+    }
+
+    .filtroativo {
+        font-size: 0.5rem;
+    }
+
+    .nav-itens-pai a {
+        font-size: 0.6rem;
+        margin: 0.2rem;
+    }    
+    .ativo {
+        border-radius: 0.2rem;
+        padding: 0.2rem;
+    }
+    .logo {
+        width: 20%;
+    }
+    .input-pesquisa {
+        font-size: 0.7rem;
+        height: 2rem;
+    }
+    .input-group {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+
+    .produtos {
+        font-size: 0.7rem;
+    }
+    .produtos p{
+        padding: 0.5rem 3rem;
+    }
+    .input-pesquisa {
+        height: 1.5rem;
+    }
+    .input-group {
+        margin: 0;
+    }
+
+}
